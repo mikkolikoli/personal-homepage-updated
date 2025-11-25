@@ -1,0 +1,9 @@
+{
+  "Navigation": {
+    "home": "Startseite",
+    "portfolio": "Portfolio",
+    "cv": "Lebenslauf",
+    "music": "Musik",
+    "change_language": "Sprache: DE"
+  }
+}

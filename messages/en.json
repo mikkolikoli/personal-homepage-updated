@@ -1,0 +1,9 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "cv": "CV",
+    "music": "Music",
+    "change_language": "Language: EN"
+  }
+}
