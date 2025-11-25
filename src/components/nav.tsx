@@ -11,7 +11,9 @@ export default function NavBar(): ReactElement {
 
   return (
     <nav className="navbar bg-base-100 shadow-sm">
+
       <div className="navbar-start">
+
         <div className="md:hidden">
 
           <button
@@ -35,22 +37,30 @@ export default function NavBar(): ReactElement {
             <li><Link href="/cv">{t('cv')}</Link></li>
             <li><Link href="/music">{t('music')}</Link></li>
           </ul>
+
         </div>
 
         <Link href="/" className="btn btn-ghost text-l">MIKKO RAJAKORPI</Link>
+
       </div>
 
+
       <div className="navbar-center hidden md:join">
+
         <div role="tablist" className="tabs tabs-box">
           <Link href="/" role="tab" className={pathname === '/' ? 'tab tab-active' : 'tab'}>{t('home')}</Link>
           <Link href="/portfolio" role="tab" className={pathname === '/portfolio' ? 'tab tab-active' : 'tab'}>{t('portfolio')}</Link>
           <Link href="/cv" role="tab" className={pathname === '/cv' ? 'tab tab-active' : 'tab'}>{t('cv')}</Link>
           <Link href="/music" role="tab" className={pathname === '/music' ? 'tab tab-active' : 'tab'}>{t('music')}</Link>
         </div>
+
       </div>
 
+
       <div className="navbar-end">
+
         <div className="md:hidden">
+
           <button
             className="btn btn-ghost"
             popoverTarget="language-selector"
@@ -71,9 +81,11 @@ export default function NavBar(): ReactElement {
             <li><Link href={`${pathname}`} locale="de">Deutsch</Link></li>
 
           </ul>
+
         </div>
 
         <div className="dropdown hidden md:join">
+
           <button tabIndex={0} className="btn btn-ghost">{t('change_language')}</button>
 
           <ul
@@ -84,7 +96,9 @@ export default function NavBar(): ReactElement {
             <li><Link href={`${pathname}`} locale="de">Deutsch</Link></li>
           </ul>
         </div>
+
       </div>
+
     </nav>
   )
 }

@@ -14,7 +14,10 @@ export default async function RootLayout({ children }: Props) {
     <html>
       <body>
         <NextIntlClientProvider>
-          <NavBar />
+          <header>
+            <NavBar />
+          </header>
+
           {children}
         </NextIntlClientProvider>
       </body>
