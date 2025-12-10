@@ -2,4 +2,4 @@
 @plugin "daisyui" {
   themes: dim --default;
 }
-
+@plugin "@tailwindcss/typography"
