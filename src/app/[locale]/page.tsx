@@ -19,6 +19,16 @@ export default function Page(): ReactElement {
             alt="Portrait of Mikko Rajakorpi in front of colorful background"
             className="m-8 w-xs shadow-lg rounded-xl mask-y-from-50% mask-x-from-50%"
           />
+
+          {/* 8 empty divs needed for 3D effect */}
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
 
         <section className="p-8 max-w-md">
