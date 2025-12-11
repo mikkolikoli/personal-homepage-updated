@@ -39,7 +39,7 @@ export default function Page(): ReactElement {
           <p>
             In terms of programming, I am interested in both front- and backend development.
             Most of my public projects lean more into frontend web development.
-            However, I also have experience with more low level languages
+            However, I also have experience with more low level languages.
           </p>
           <p>
             Outside of programming, I have also some experience in UX design and I know my way around the linux/macos terminal.
