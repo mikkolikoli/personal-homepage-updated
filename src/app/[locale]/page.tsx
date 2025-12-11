@@ -10,7 +10,7 @@ export default function Page(): ReactElement {
     <article className="flex flex-col items-center p-8">
       <h1 className="text-4xl font-bold p-8">Mikko Rajakorpi</h1>
 
-      <section className="prose max-w-none flex flex-col md:flex-row items-center">
+      <section className="prose max-w-none flex flex-col lg:flex-row items-center">
         <div className="hover-3d">
           <Image
             src="/portrait-500p.jpg"
