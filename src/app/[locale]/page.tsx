@@ -11,15 +11,17 @@ export default function Page(): ReactElement {
       <h1 className="text-4xl font-bold p-8">Mikko Rajakorpi</h1>
 
       <section className="prose max-w-none flex flex-col md:flex-row items-center">
-        <Image
-          src="/portrait-500p.jpg"
-          width={500}
-          height={667}
-          alt="Portrait of Mikko Rajakorpi in front of colorful background"
-          className="m-8 w-xs shadow-lg rounded-xl mask-y-from-50% mask-x-from-50%"
-        />
+        <div className="hover-3d">
+          <Image
+            src="/portrait-500p.jpg"
+            width={500}
+            height={667}
+            alt="Portrait of Mikko Rajakorpi in front of colorful background"
+            className="m-8 w-xs shadow-lg rounded-xl mask-y-from-50% mask-x-from-50%"
+          />
+        </div>
 
-        <section className="p-8">
+        <section className="p-8 max-w-md">
           <p>
             I am Mikko Rajakorpi, a computer science student at Tampere University.
             Welcome to my personal website!
