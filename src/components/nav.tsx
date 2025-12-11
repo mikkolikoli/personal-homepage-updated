@@ -10,7 +10,7 @@ export default function NavBar(): ReactElement {
   const pathname = usePathname()
 
   return (
-    <nav className="navbar bg-base-100 shadow-sm">
+    <nav className="navbar bg-base-200 shadow-sm">
 
       <div className="navbar-start">
 
@@ -47,11 +47,31 @@ export default function NavBar(): ReactElement {
 
       <div className="navbar-center hidden md:join">
 
-        <div role="tablist" className="tabs tabs-box">
-          <Link href="/" role="tab" className={pathname === '/' ? 'tab tab-active' : 'tab'}>{t('home')}</Link>
-          <Link href="/portfolio" role="tab" className={pathname === '/portfolio' ? 'tab tab-active' : 'tab'}>{t('portfolio')}</Link>
-          <Link href="/cv" role="tab" className={pathname === '/cv' ? 'tab tab-active' : 'tab'}>{t('cv')}</Link>
-          <Link href="/music" role="tab" className={pathname === '/music' ? 'tab tab-active' : 'tab'}>{t('music')}</Link>
+        <div role="tablist" className="tabs tabs-box bg-base-300">
+          <Link href="/" role="tab"
+            className={pathname === '/'
+              ? 'tab tab-active bg-primary text-base-100'
+              : 'tab'}>
+            {t('home')}
+          </Link>
+          <Link href="/portfolio" role="tab"
+            className={pathname === '/portfolio'
+              ? 'tab tab-active bg-primary text-base-100'
+              : 'tab'}>
+            {t('portfolio')}
+          </Link>
+          <Link href="/cv" role="tab"
+            className={pathname === '/cv'
+              ? 'tab tab-active bg-primary text-base-100'
+              : 'tab'}>
+            {t('cv')}
+          </Link>
+          <Link href="/music" role="tab"
+            className={pathname === '/music'
+              ? 'tab tab-active bg-primary text-base-100'
+              : 'tab'}>
+            {t('music')}
+          </Link>
         </div>
 
       </div>
